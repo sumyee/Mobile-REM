@@ -1,7 +1,7 @@
 # Mobile-REM
 移动端适配
 
-
+```javascript
 <script>
   window.onload = function () {
     document.addEventListener('touchstart', function (event) {
@@ -60,3 +60,4 @@
     document.body.style.visibility = 'visible'
   }
 </script>
+```
