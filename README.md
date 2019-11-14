@@ -1,7 +1,9 @@
 # Mobile-REM
 移动端适配
 
-window.onload = function () {
+# javascript
+``window.onload = function () {
+
     document.addEventListener('touchstart', function (event) {
       if (event.touches.length > 1) {
         event.preventDefault();
@@ -23,7 +25,7 @@ window.onload = function () {
       var _remMetaScalable = typeof window._remMetaScalable === 'undefined'
         ? false
         : !!window._remMetaScalable;
-
+        
       var docEl = doc.documentElement,
         isIOS = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
         dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
@@ -57,3 +59,4 @@ window.onload = function () {
 
     document.body.style.visibility = 'visible'
   }
+  ``
